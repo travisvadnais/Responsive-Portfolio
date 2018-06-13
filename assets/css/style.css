@@ -64,7 +64,7 @@ h2, h3 {
 }
 
 #logo {
-    width: 250px;
+    width: 100%;
     height: 78px;
     background: #4aaaa5;
     float: left;
@@ -81,7 +81,8 @@ h2, h3 {
 nav {
     float: right;
     margin-top: 25px;
-    margin-right: 20px;
+    width: 100%;
+    /* margin-right: 20px; */
 }
 
 nav a {
@@ -107,11 +108,11 @@ nav a:first-child {
 .main_section {
     background: #fff;
     padding: 30px;
-    margin: 0 0 40px 0;
-    width: 100%;
-    max-width: 650px;
-    float: left;
+    margin: 0 10px 40px 10px;
     border: 1px solid #ddd;
+}
+.col-sm-8 {
+    padding-left: 0;
 }
 
 .profile_pic {
@@ -135,7 +136,7 @@ nav a:first-child {
     padding: 30px;
     width: 100%;
     max-width: 270px;
-    float: right;
+    margin: 0 10px 0 10px;
     border: 1px solid #ddd;
     margin-bottom: 20px;
     text-align: center;
@@ -254,7 +255,7 @@ input[type=submit]:active {
 
 
 /* INDEX Width at 980px and below */
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
     .main_container {
         width: 98%;
         max-width: 960px;
@@ -280,11 +281,11 @@ input[type=submit]:active {
         width: 340px;
         height: 340px;
     }
-}
+} */
 
 /* INDEX Width at 768px and below */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .main_section {
         width: 97%;
         max-width: 720px;
@@ -308,55 +309,34 @@ input[type=submit]:active {
         margin-top: -10px;
     }
     
-}
+} */
 
 
 /* INDEX Width at 640px and below */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 575px) { 
     
-    body {
-        width: 100%;
-        max-width: 640px;
-        box-sizing: border-box;
-    }
-    
-    #logo {
-        width: 100%;
-        max-width: 640px;
-        margin-left: 0px;
-        border-radius: 0;
-    }
     #masthead {
-        height: 114px;
+        height: 78px;
         margin-bottom: 50px;
     }
-    .main_section {
-        width: 97%;
-        max-width: 620px;
-        min-width: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
-        clear: both;
-        float: none;
+
+    #logo {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
     }
 
-    img.profile_pic {
-        width: 250px;
-        height: 250px;
+    #navbar {
+        max-height: 25px;
     }
-    .sidebar {
-        width: 97%;
-        max-width: 620px;
-        min-width: 100px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-        clear: both;
-        float: none;
+
+    #important_stuff {
+        padding-right: 0;
     }
 
     nav {
+        max-height: 30px;
         margin: 0 auto;
         clear: both;
         float: none;
@@ -366,16 +346,34 @@ input[type=submit]:active {
 
     nav a {
         margin: 0 auto;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px 5px 5px 5px;
         width: 30%;
     }
+
+    img.profile_pic {
+        width: 250px;
+        height: 250px;
+    }
+    .sidebar {
+        width: 97%;
+        max-width: 620px;
+        min-width: 27px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        clear: both;
+        float: none;
+    }
+
+    
+
+    
 
     footer {
         width: 100%;
         max-width: 640px;
     }
-}
+} 
 
     /* PORTFOLIO 980px and below */
     
