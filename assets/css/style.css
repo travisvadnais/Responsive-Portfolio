@@ -312,7 +312,7 @@ input[type=submit]:active {
 } */
 
 
-/* INDEX Width at 640px and below */
+/* INDEX Width at 575px and below */
 
 @media screen and (max-width: 575px) { 
     
@@ -363,11 +363,7 @@ input[type=submit]:active {
         margin-bottom: 30px;
         clear: both;
         float: none;
-    }
-
-    
-
-    
+    } 
 
     footer {
         width: 100%;
